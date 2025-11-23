@@ -65,8 +65,8 @@ export const timeline = [
   },
   {
     id: "moment-5",
-    title: "SWE Intern @ ACE IoT",
-    year: "2023",
+    title: "SWE Intern @ ACE IoT Solutions",
+    year: "2024",
     orbColor: "#51D1A3",
     bgColor: "#04100C",
     glassColor: "#51D1A3",
