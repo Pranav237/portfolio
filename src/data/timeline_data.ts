@@ -10,6 +10,7 @@ export const timeline = [
     yearColor: "#9DC6FF",
     content: ["Not much to see here."]
   },
+  // add mastermind here
   {
     id: "moment-1",
     title: "First coding",
