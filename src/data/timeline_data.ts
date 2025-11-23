@@ -13,7 +13,7 @@ export const timeline = [
   {
     id: "moment-1",
     title: "First coding",
-    year: "2014",
+    year: "2017",
     orbColor: "#5AB1FF",
     bgColor: "#0A1320",
     glassColor: "#5AB1FF",
