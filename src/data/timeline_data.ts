@@ -2,7 +2,7 @@ export const timeline = [
   {
     id: "moment-0",
     title: "I am born",
-    year: "2004",
+    year: "2005",
     orbColor: "#6EC3FF",
     bgColor: "#07111A",
     glassColor: "#6EC3FF",
