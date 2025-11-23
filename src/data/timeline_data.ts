@@ -92,7 +92,7 @@ export const timeline = [
   {
     id: "moment-7",
     title: "SWE Co-op @ GE Appliances",
-    year: "2024",
+    year: "2025",
     orbColor: "#7CB2FF",
     bgColor: "#0A1320",
     glassColor: "#7CB2FF",
