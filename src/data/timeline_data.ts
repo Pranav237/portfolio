@@ -26,7 +26,7 @@ export const timeline = [
   {
     id: "moment-2",
     title: "Java @ FRC",
-    year: "2016",
+    year: "2022",
     orbColor: "#FF6478",
     bgColor: "#15070C",
     glassColor: "#FF6478",
