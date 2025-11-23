@@ -79,7 +79,7 @@ export const timeline = [
   {
     id: "moment-6",
     title: "Embedded Robotics",
-    year: "2023",
+    year: "2025",
     orbColor: "#D46CFF",
     bgColor: "#16031F",
     glassColor: "#D46CFF",
