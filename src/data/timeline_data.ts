@@ -34,13 +34,13 @@ export const timeline = [
     blobColors: ["#FF6478", "#7B2340", "#FF9AA6"] as const,
     yearColor: "#FF9DB0",
     content: [
-      "Learned Java on a robotics team — autonomy, control systems, vision, drivetrains."
+      "Learned Java on a robotics team: autonomy, control systems, vision, drivetrains."
     ]
   },
   {
     id: "moment-3",
     title: "Squirrel Watching!?",
-    year: "2021",
+    year: "2023",
     orbColor: "#B88A4A",
     bgColor: "#1A1208",
     glassColor: "#B88A4A",
