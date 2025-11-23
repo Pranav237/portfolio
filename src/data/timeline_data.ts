@@ -53,7 +53,7 @@ export const timeline = [
   {
     id: "moment-4",
     title: "EPICS Mobile & Web",
-    year: "2022",
+    year: "2023",
     orbColor: "#FF9E4A",
     bgColor: "#1A0F05",
     glassColor: "#FF9E4A",
