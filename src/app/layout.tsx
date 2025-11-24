@@ -14,7 +14,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="font-inter bg-black">
-        <DynamicBackground colors={["#000", "#000", "#000"]} />
         {children}
       </body>
     </html>

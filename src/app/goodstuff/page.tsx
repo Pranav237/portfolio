@@ -7,9 +7,9 @@ import DynamicBackground from "@/components/DynamicBackground";
 import Lenis from "@studio-freight/lenis";
 
 export default function Page() {
-  const [activeColors, setActiveColors] = useState<[string, string, string]>(
-    [...timeline[0].blobColors]
-  );
+  const [activeColor, setActiveColor] = useState<string>(timeline[0].bgColor);
+
+
 
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
   const scrollTimeout = useRef<NodeJS.Timeout | null>(null);
@@ -65,16 +65,14 @@ export default function Page() {
 
   return (
     <main className="relative min-h-screen overflow-x-hidden">
-      <DynamicBackground colors={activeColors} />
+      <DynamicBackground color={activeColor} />
 
       {timeline.map((item, index) => (
         <Section
           key={item.id}
           index={index}
           data={item}
-          onVisible={() =>
-            setActiveColors([...item.blobColors] as [string, string, string])
-          }
+          onVisible={() => setActiveColor(item.bgColor)}
           ref={(el) => {
             sectionRefs.current[index] = el;
           }}

@@ -24,35 +24,47 @@ const Section = forwardRef<HTMLElement, Props>(
     function setRefs(el: HTMLElement | null) {
       inViewRef(el);
       if (typeof ref === "function") ref(el);
-      else if (ref) (ref as React.MutableRefObject<HTMLElement | null>).current = el;
+      else if (ref)
+        (ref as React.MutableRefObject<HTMLElement | null>).current = el;
     }
 
     return (
       <section
-        data-snap
         ref={setRefs}
-        className="h-screen w-full flex flex-col items-center justify-center text-white text-center"
+        data-snap
+        className="h-screen w-full snap-start flex flex-col items-center justify-center text-white text-center"
       >
-        <h1
-          className="font-title text-6xl mb-4"
-          style={{ color: data.yearColor }}
-        >
-          {data.year}
-        </h1>
+        {/* year */}
+        <div className="-mt-[10vh]">
+          <h1
+            className="font-title text-6xl mb-4"
+            style={{ color: data.yearColor }}
+          >
+            {data.year}
+          </h1>
 
-        <p className="font-title text-lg opacity-80 mb-10">
-          {data.title}
-        </p>
+          {/*text below year*/}
+          <p className="font-title text-lg opacity-80 mb-10">
+            {data.title}
+          </p>
 
-        <LiquidGlass>
-          <div className="font-body text-base leading-relaxed opacity-95">
-            {data.content.map((line, i) => (
-              <p key={i} className="mb-2">
-                {line}
-              </p>
-            ))}
-          </div>
-        </LiquidGlass>
+          <LiquidGlass>
+            <div className="font-body text-base leading-relaxed opacity-95 flex flex-col items-center">
+              {data.image && (
+                <img
+                  src={data.image}
+                  alt={data.title}
+                  className="max-h-[240px] w-auto object-contain mx-auto mb-6 rounded-2xl shadow-lg"
+                />
+              )}
+              {data.content.map((line, i) => (
+                <p key={i} className="mb-2">
+                  {line}
+                </p>
+              ))}
+            </div>
+          </LiquidGlass>
+        </div>
       </section>
     );
   }
