@@ -12,7 +12,7 @@ interface Props {
 }
 
 const Section = forwardRef<HTMLElement, Props>(
-  ({ data, index, onVisible }, ref) => {
+  ({ data, onVisible }, ref) => {
     const { ref: inViewRef } = useInView({
       threshold: 0.5,
       triggerOnce: false,

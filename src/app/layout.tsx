@@ -1,7 +1,6 @@
 "use client";
 
 import "./globals.css";
-import DynamicBackground from "@/components/DynamicBackground";
 
 import "@fontsource/dm-sans/400.css";
 import "@fontsource/dm-sans/700.css";

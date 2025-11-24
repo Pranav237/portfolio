@@ -1,11 +1,9 @@
-import { image } from "framer-motion/client";
-
 export const timeline = [
   {
     id: "moment-0",
     title: "I am born",
     year: "2005",
-    bgColor: "#3c9222ff",
+    bgColor: "#22361dff",
     yearColor: "#9DC6FF",
     image: "/content/born.png",
     content: ["Not much to see here."]
