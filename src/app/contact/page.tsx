@@ -6,14 +6,14 @@ export default function ContactPage() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
-    await navigator.clipboard.writeText("pranav@example.com");
+    await navigator.clipboard.writeText("pranavramnath23@gmail.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 1200);
   };
 
   return (
     <main className="min-h-screen w-full flex flex-col items-center justify-center relative overflow-hidden">
-
+      
       {/* Soft Blurred Background Glow */}
       <div className="absolute inset-0 -z-10">
         <div className="w-[60vw] h-[60vw] rounded-full bg-[#4b4bff]/20 blur-[120px] absolute top-[10%] left-[15%]" />
