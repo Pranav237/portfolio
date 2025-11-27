@@ -17,11 +17,12 @@ export default function DynamicBackground({ color }: Props) {
   return (
     <div className="fixed inset-0 -z-10 pointer-events-none">
       <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: "url('/content/bg.png')",
-        }}
-      />
+  className="absolute inset-0 bg-no-repeat bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/content/bg.png')",
+  }}
+/>
+
       <motion.div
         className="absolute inset-0"
         style={{ backgroundColor: tint, opacity: 0.60 }}

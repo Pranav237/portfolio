@@ -62,3 +62,26 @@ html.lenis {
 .lenis.lenis-stopped {
   overflow: hidden;
 }
+
+/* Chrome, Safari, Edge */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+html, body {
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* IE / Edge legacy */
+}
+
+@keyframes fade {
+  0%   { opacity: 0; transform: translateY(4px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade {
+  animation: fade 0.3s ease-out;
+}
+
+

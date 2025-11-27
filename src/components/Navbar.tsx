@@ -14,7 +14,7 @@ export default function Navbar() {
           path === "/goodstuff" ? "opacity-100" : "opacity-60 hover:opacity-100"
         }`}
       >
-        My Life
+        Glimpse of My Life
       </Link>
 
       <Link
@@ -23,7 +23,7 @@ export default function Navbar() {
           path === "/boringstuff" ? "opacity-100" : "opacity-60 hover:opacity-100"
         }`}
       >
-        Contact
+        Contact Me
       </Link>
     </nav>
   );
