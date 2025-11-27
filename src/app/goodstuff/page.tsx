@@ -5,6 +5,7 @@ import { timeline } from "@/data/timeline_data";
 import Section from "@/components/Section";
 import DynamicBackground from "@/components/DynamicBackground";
 import Lenis from "@studio-freight/lenis";
+import Footer from "@/components/Footer";
 
 export default function Page() {
   const [activeColor, setActiveColor] = useState<string>(timeline[0].bgColor);
@@ -78,6 +79,7 @@ export default function Page() {
           }}
         />
       ))}
+      <Footer />
     </main>
   );
 }

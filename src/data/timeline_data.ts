@@ -3,7 +3,7 @@ export const timeline = [
     id: "moment-0",
     title: "I am born",
     year: "2005",
-    bgColor: "#22361dff",
+    bgColor: "#a7d1d9ff",
     yearColor: "#9DC6FF",
     image: "/content/born.png",
     content: ["Not much to see here."]
@@ -16,17 +16,17 @@ export const timeline = [
     bgColor: "#0073ffff",
     yearColor: "#ffff52ff",
     image: "/content/babycoding.png",
-    content: ["Wrote my first program. It printed Hello World."]
+    content: ["Wrote my first code at 12: print(\"Hello World\")"]
   },
 
   {
     id: "moment-2",
-    title: "First big project",
+    title: "A fun project",
     year: "2020",
     bgColor: "#584e41ff",
     yearColor: "#483a2bff",
     image: "/content/mastermind.png",
-    content: ["Training arc begins: tiny Nav at a keyboard."]
+    content: ["Built Mastermind with Python & Tkinter, learned a lot about DSA. HMU if you can beat this game."]
   },
 
   {
@@ -36,7 +36,7 @@ export const timeline = [
     bgColor: "#3d0068ff",
     yearColor: "#5eff00ff",
     image: "/content/robotics.png",
-    content: ["Learned Java on a robotics team: autonomy, vision, drivetrains."]
+    content: ["Used Java to develop features for a competition robot. Did stuff like vision tracking, autonomous navigation, loop control, gyroscopic navigation, omnidirectional drive, etc."]
   },
 
   {
@@ -46,7 +46,7 @@ export const timeline = [
     bgColor: "#000000ff",
     yearColor: "#e0a44fff",
     image: "/content/squirrel.png",
-    content: ["Built a full-stack website for the Squirrel Watching Club."]
+    content: ["Built a full-stack website for the Squirrel Watching Club of Purdue."]
   },
 
   {
@@ -56,7 +56,7 @@ export const timeline = [
     bgColor: "#1A0F05",
     yearColor: "#FFCF91",
     image: "/content/EPICS.png",
-    content: ["Built mobile + web apps for nonprofits using Flutter & React."]
+    content: ["Built end-to-end and industry grade mobile and web apps for nonprofits using Flutter and React."]
   },
 
   {
@@ -66,7 +66,7 @@ export const timeline = [
     bgColor: "#0e1519ff",
     yearColor: "#daff24ff",
     image: "/content/ACE.png",
-    content: ["Built Vue dashboards & CRUD platforms."]
+    content: ["Built admin dashboards and platforms using Vue.js."]
   },
 
   {
@@ -76,7 +76,7 @@ export const timeline = [
     bgColor: "#16031F",
     yearColor: "#ffaaf9ff",
     image: "/content/sumobot.png",
-    content: ["Programmed an autonomous sumo bot in C."]
+    content: ["Programmed an autonomous sumo bot in C. Wrote FSMs and algorithms for navigation and battle strategies. Used IR sensors for edge and opponent detection."]
   },
 
   {
@@ -86,7 +86,7 @@ export const timeline = [
     bgColor: "#0067bcff",
     yearColor: "#d1e0ffff",
     image: "/content/ge.png",
-    content: ["Built Rev3 diagnostics, board-config UI, C# maintenance."]
+    content: ["Implemented diagnostic message handling and parsed ERD data to enable diagnostics integration within the SmartHQ Service application. Additionally, I redesigned and refactored legacy code to improve reliability and cross-version compatibility with existing PAC firmware."]
   }
 ] as const;
 
