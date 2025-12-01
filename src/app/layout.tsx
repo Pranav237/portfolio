@@ -8,6 +8,7 @@ import "@fontsource/inter/400.css";
 import "@fontsource/inter/500.css";
 
 import Navbar from "@/components/Navbar";
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   icons: {
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="pt-16">
         {children}
         </div>
+        <Analytics />
       </body>
     </html>
   );
