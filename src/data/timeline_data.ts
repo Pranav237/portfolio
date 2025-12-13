@@ -1,92 +1,134 @@
 export const timeline = [
   {
-    id: "moment-0",
-    title: "I am born",
-    year: "2005",
-    bgColor: "#a7d1d9ff",
-    yearColor: "#9DC6FF",
-    image: "/content/born.png",
-    content: ["Not much to see here."]
-  },
-
-  {
     id: "moment-1",
-    title: "First coding",
+    title: "Hello, World!",
     year: "2017",
     bgColor: "#0073ffff",
     yearColor: "#ffff52ff",
     image: "/content/babycoding.png",
-    content: ["Wrote my first code at 12: print(\"Hello World\")"]
+    content: [
+      "Began programming."
+    ]
   },
 
   {
     id: "moment-2",
-    title: "A fun project",
+    title: "Algorithmic Thinking",
     year: "2020",
     bgColor: "#584e41ff",
     yearColor: "#483a2bff",
     image: "/content/mastermind.png",
-    content: ["Built Mastermind with Python & Tkinter, learned a lot about DSA. HMU if you can beat this game."]
+    content: [
+      "Designed and built a full game system in Python with Tkinter, strengthening data structures, state management, and UI-driven logic."
+    ]
   },
 
   {
     id: "moment-3",
-    title: "Java @ FRC",
+    title: "Robotics Software Engineering",
     year: "2022",
     bgColor: "#3d0068ff",
     yearColor: "#5eff00ff",
     image: "/content/robotics.png",
-    content: ["Used Java to develop features for a competition robot. Did stuff like vision tracking, autonomous navigation, loop control, gyroscopic navigation, omnidirectional drive, etc."]
+    content: [
+      "Shipped competition-critical Java software for autonomous navigation, vision tracking, gyroscopic control, and omnidirectional drive systems."
+    ]
   },
 
   {
     id: "moment-4",
-    title: "Squirrel Watching!?",
+    title: "Full-Stack Web Engineering",
     year: "2023",
     bgColor: "#000000ff",
     yearColor: "#e0a44fff",
     image: "/content/squirrel.png",
-    content: ["Built a full-stack website for the Squirrel Watching Club of Purdue."]
+    content: [
+      "Built and deployed a full-stack website for the Squirrel Watching Club at Purdue, owning frontend, backend, and deployment."
+    ]
   },
 
   {
     id: "moment-5",
-    title: "EPICS Mobile & Web",
+    title: "Healthcare Mobile App (EPICS)",
     year: "2023",
-    bgColor: "#1A0F05",
-    yearColor: "#FFCF91",
-    image: "/content/EPICS.png",
-    content: ["Built end-to-end and industry grade mobile and web apps for nonprofits using Flutter and React."]
+    bgColor: "#848484ff",
+    yearColor: "#ff6a00ff",
+    image: "/content/NKF.png",
+    content: [
+      "Built a diet-tracking mobile application for the National Kidney Foundation, focusing on accessibility, data validation, and real-world healthcare constraints."
+    ]
   },
 
   {
     id: "moment-6",
+    title: "Nonprofit Platform Engineering (EPICS)",
+    year: "2023",
+    bgColor: "#016badff",
+    yearColor: "#d8dcdfff",
+    image: "/content/LTHC.png",
+    content: [
+      "Led development of mobile and web platforms for Lafayette Transitional Housing Center, shipping production systems used by staff and residents."
+    ]
+  },
+
+  {
+    id: "moment-7",
     title: "SWE Intern @ ACE IoT",
     year: "2024",
     bgColor: "#0e1519ff",
     yearColor: "#daff24ff",
     image: "/content/ACE.png",
-    content: ["Built admin dashboards and platforms using Vue.js."]
-  },
-
-  {
-    id: "moment-7",
-    title: "Embedded Robotics",
-    year: "2025",
-    bgColor: "#16031F",
-    yearColor: "#ffaaf9ff",
-    image: "/content/sumobot.png",
-    content: ["Programmed an autonomous sumo bot in C. Wrote FSMs and algorithms for navigation and battle strategies. Used IR sensors for edge and opponent detection."]
+    content: [
+      "Built internal dashboards and admin platforms using Vue.js, improving operational workflows and system visibility."
+    ]
   },
 
   {
     id: "moment-8",
+    title: "Distributed Systems & AI",
+    year: "2025",
+    bgColor: "#0b132b",
+    yearColor: "#0d89c3ff",
+    image: "/content/BB.png",
+    content: [
+      "Built BookBuddy, a distributed system using Cloudflare Workers, Durable Objects, and KV to deliver AI-powered book recommendations at scale."
+    ]
+  },
+
+  {
+    id: "moment-9",
+    title: "Embedded Robotics Systems",
+    year: "2025",
+    bgColor: "#16031F",
+    yearColor: "#ffaaf9ff",
+    image: "/content/sumobot.png",
+    content: [
+      "Programmed an autonomous sumo robot in C, implementing FSMs, real-time sensor processing, and adversarial navigation strategies."
+    ]
+  },
+
+  {
+    id: "moment-10",
     title: "SWE Co-op @ GE Appliances",
     year: "2025",
     bgColor: "#0067bcff",
     yearColor: "#d1e0ffff",
     image: "/content/ge.png",
-    content: ["Implemented diagnostic message handling and parsed ERD data to enable diagnostics integration within the SmartHQ Service application. Additionally, I redesigned and refactored legacy code to improve reliability and cross-version compatibility with existing PAC firmware."]
+    content: [
+      "Implemented diagnostic message handling and ERD parsing to enable appliance diagnostics in SmartHQ, while refactoring legacy systems for cross-version firmware compatibility."
+    ]
+  },
+
+  {
+    id: "moment-11",
+    title: "AI Product Engineering",
+    year: "2025",
+    bgColor: "#323e32ff",
+    yearColor: "#f5f5f5",
+    image: "/content/SW.png",
+    content: [
+      "Built SpeakWise, an AI-powered speaking coach that analyzes audio and video to deliver feedback on tone, pacing, filler words, and body language."
+    ]
   }
 ] as const;
 
