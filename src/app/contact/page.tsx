@@ -1,9 +1,26 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import DynamicBackground from "@/components/DynamicBackground";
+import LiquidGlass from "@/components/LiquidGlass";
+import { timeline } from "@/data/timeline_data";
+
+const latest = timeline[timeline.length - 1];
 
 export default function ContactPage() {
   const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    const { documentElement: html, body } = document;
+    const prevHtml = html.style.overflow;
+    const prevBody = body.style.overflow;
+    html.style.overflow = "hidden";
+    body.style.overflow = "hidden";
+    return () => {
+      html.style.overflow = prevHtml;
+      body.style.overflow = prevBody;
+    };
+  }, []);
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText("pranavramnath23@gmail.com");
@@ -11,52 +28,63 @@ export default function ContactPage() {
     setTimeout(() => setCopied(false), 1200);
   };
 
+  const linkClass =
+    "block font-body text-base text-white/90 opacity-95 hover:text-white hover:opacity-100 transition-colors";
+
   return (
-    <main className="min-h-screen w-full flex flex-col items-center justify-center relative overflow-hidden">
-      
-      {/* Soft Blurred Background Glow */}
-      <div className="absolute inset-0 -z-10">
-        <div className="w-[60vw] h-[60vw] rounded-full bg-[#4b4bff]/20 blur-[120px] absolute top-[10%] left-[15%]" />
-        <div className="w-[50vw] h-[50vw] rounded-full bg-[#9b5bff]/20 blur-[140px] absolute bottom-[10%] right-[10%]" />
-      </div>
+    <main className="relative h-[calc(100vh-4rem)] overflow-hidden">
+      <DynamicBackground color={latest.bgColor} />
 
-      {/* Header */}
-      <h1 className="font-title text-5xl text-white mb-10">Contact Me</h1>
-
-      {/* Card */}
-      <div className="bg-white/10 backdrop-blur-xl shadow-xl rounded-3xl px-10 py-12 text-center font-body text-white/90 space-y-6 max-w-sm border border-white/10">
-        <a
-          href="/content/PranavResume.pdf"
-          download
-          className="block hover:text-white transition"
-        >
-          Download Resume
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/pranavr23"
-          target="_blank"
-          className="block hover:text-white transition"
-        >
-          LinkedIn
-        </a>
-
-        <div className="space-y-1">
-          <button
-            onClick={handleCopy}
-            className="block w-full text-white/90 hover:text-white transition"
+      <section className="h-full w-full flex flex-col items-center justify-center text-white text-center px-4">
+        <div className="-mt-6 sm:-mt-10">
+          <h1
+            className="font-title text-6xl mb-4"
+            style={{ color: latest.yearColor }}
           >
-            Copy Email
-          </button>
+            Contact
+          </h1>
 
-          {/* Smooth fading notification */}
-          {copied && (
-            <div className="text-sm text-green-300 opacity-80 animate-fade">
-              Copied!
+          <p className="font-title text-lg opacity-80 mb-10">
+            Resume, LinkedIn, and email.
+          </p>
+
+          <LiquidGlass>
+            <div className="font-body text-base leading-relaxed flex flex-col items-center gap-6">
+              <a
+                href="/content/PranavResume.pdf"
+                download
+                className={linkClass}
+              >
+                Download Resume
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/pranavr23"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={linkClass}
+              >
+                LinkedIn
+              </a>
+
+              <div className="space-y-1 w-full">
+                <button
+                  type="button"
+                  onClick={handleCopy}
+                  className={`${linkClass} w-full cursor-pointer bg-transparent border-0 p-0`}
+                >
+                  Copy Email
+                </button>
+                {copied && (
+                  <div className="text-sm text-green-300/90 animate-fade">
+                    Copied!
+                  </div>
+                )}
+              </div>
             </div>
-          )}
+          </LiquidGlass>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

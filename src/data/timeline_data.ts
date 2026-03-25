@@ -129,6 +129,18 @@ export const timeline = [
     content: [
       "Built SpeakWise, an AI-powered speaking coach that analyzes audio and video to deliver feedback on tone, pacing, filler words, and body language."
     ]
+  },
+
+  {
+    id: "moment-12",
+    title: "Destination Zero: Facility Decarbonization Dashboard",
+    year: "2026",
+    bgColor: "#9B2335",
+    yearColor: "#faf5eb",
+    image: "/content/xtern_challenge.png",
+    content: [
+      "Architected a multi-agent LangGraph pipeline backed by OpenRouter LLMs along with MCP, Firestore checkpointing, and SSE streaming for Destination Zero, a facility decarbonization workflow dashboard."
+    ]
   }
 ] as const;
 
