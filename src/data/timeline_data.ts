@@ -141,6 +141,18 @@ export const timeline = [
     content: [
       "Architected a multi-agent LangGraph pipeline backed by OpenRouter LLMs along with MCP, Firestore checkpointing, and SSE streaming for Destination Zero, a facility decarbonization workflow dashboard."
     ]
+  },
+
+  {
+    id: "moment-13",
+    title: "SWE Intern @ Outside Source",
+    year: "2026",
+    bgColor: "#2A323C",
+    yearColor: "#FECB04",
+    image: "/content/OS_logonew.png",
+    content: [
+      "Built an 11-agent system routing 350+ tasks through a human-gated approval queue, with specs defining each agent's scope and behavior."
+    ]
   }
 ] as const;
 
